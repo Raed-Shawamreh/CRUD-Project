@@ -14,6 +14,7 @@ var updt_index=0;
 var isNameValid = false;
 var isCategoryValid = false;
 var isPriceValid = false;
+var newValue_Test =true;
 
 btn_updateCourse.style.display="none";
 
