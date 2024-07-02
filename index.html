@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Page</title>
+    <!-- Bootsrtap Css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- FontAwsome Css -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- sweet alert Css -->
+    <link rel="stylesheet" href="vendor/sweet alert/sweetalert2.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+    <div class="add-course">
+        <div class="container">
+            <h1>CRUD System</h1>
+            <form action="">
+                <div class="mb-3">
+                    <label for="course_name" class="form-label">Course name</label>
+                    <input type="text" class="form-control" id="course_name" placeholder="Course name">
+                    <div class="text-danger small" id="courseName_alert"></div>
+                </div>
+
+                <label for="course_category" class="form-label">Course category</label>
+                <input type="text" class="form-control" id="course_category" placeholder="course category">
+                <div class="text-danger small" id="courseCategory_alert"></div>
+
+                <label for="course_price" class="form-label">Course price</label>
+                <input type="number" class="form-control" id="course_price" placeholder="Course price"> 
+                <div class="text-danger small" id="coursePrice_alert"></div>
+
+             
+                
+                <input type="submit" value="Add Course" class="btn btn-outline-secondary mt-3" disabled id="btn_addCourse">
+                <input type="submit" value="Update Course" class="btn btn-outline-info mt-3" id="btn_updateCourse">
+                <input type="reset" value="Clear" class="btn btn-outline-secondary mt-3 ms-2" id="btn-reset">
+     
+        
+            </form>
+
+            <div class="table">
+                <input type="search"  class="form-control my-3" id="search" placeholder="Search">
+                <input type="submit" value="Delete All" class="btn btn-outline-danger " id="btn_Delete">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">name</th>
+                            <th scope="col">category</th>
+                            <th scope="col">price</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="add_record">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2 id="h22"></h2>
+    </div>
+    
+    <!-- Bootstrap js -->
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <!-- sweet alerrt js -->
+    <script src="vendor/sweet alert/sweetalert2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/JS/JS.js"></script>
+</body>
+</html>
